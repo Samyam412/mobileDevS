@@ -1,0 +1,118 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7990890653225163334",
+      "lastPropertyId": "3:6401688288201065415",
+      "name": "Batch",
+      "properties": [
+        {
+          "id": "1:9149737680838611340",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2349034939149875673",
+          "name": "batchId",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "1:5099866609593089797"
+        },
+        {
+          "id": "3:6401688288201065415",
+          "name": "batchName",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:4011635541537723401",
+      "lastPropertyId": "3:837101741819325884",
+      "name": "Course",
+      "properties": [
+        {
+          "id": "1:8614210995010773422",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:7062588780279299201",
+          "name": "courseId",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "2:5365885476471892057"
+        },
+        {
+          "id": "3:837101741819325884",
+          "name": "courseName",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:3682719873851489528",
+      "lastPropertyId": "6:4887278891845817226",
+      "name": "Student",
+      "properties": [
+        {
+          "id": "1:6623200238558633212",
+          "name": "stdId",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2671958651587064101",
+          "name": "fname",
+          "type": 9
+        },
+        {
+          "id": "3:4399703812794800369",
+          "name": "lname",
+          "type": 9
+        },
+        {
+          "id": "4:6893189439769084783",
+          "name": "username",
+          "type": 9
+        },
+        {
+          "id": "5:7124987918403295540",
+          "name": "password",
+          "type": 9
+        },
+        {
+          "id": "6:4887278891845817226",
+          "name": "batchId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "3:5555325175245480986",
+          "relationTarget": "Batch"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:5632833261564026746",
+          "name": "course",
+          "targetId": "2:4011635541537723401"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "3:3682719873851489528",
+  "lastIndexId": "3:5555325175245480986",
+  "lastRelationId": "1:5632833261564026746",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
